@@ -28,6 +28,6 @@ We provide GitHub links pointing to the PyTorch implementation code for all netw
 Figure2:The results of segmentation performance of the proposed method against 14 baseline models, evaluated on the CMED-18K dataset. Metrics include dice coefficient, HD, HD95, NCC, and Kappa statistic. The highest performance values for each metric are highlighted in red, with the second highest marked in blue.
 
 ![Figure3](https://github.com/IMOP-lab/VTF-Net-Pytorch/blob/main/figures/Fig5.png)
-Figure3:The visual results of our method compared to the existing 14 segmentation methods on the CMED-18k dataset.
+Figure3:Illustration of results between VTF-Net and 14 baseline models. The first row presents the original input images, followed by corresponding results, including zoomed-in views of edema regions to highlight segmentation detail.
 
 ## Abaltion study
