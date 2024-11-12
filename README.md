@@ -38,7 +38,7 @@ The hardware configuration consisted of a desktop system equipped with two NVIDI
 ### baseline
 We provide GitHub links pointing to the PyTorch implementation code for all networks compared in this experiment here, so you can easily reproduce all these projects.
 
-[UNet](https://github.com/milesial/Pytorch-UNet);[FCN8s](); [SegNet](); [PSPNet](); [ENet](); [ICNet](); [UNet+AttGate]() [DANet](); [LEDNet](); [DUNet](); [CENet](); [CGNet](); [OCNet](); [GCN](), 
+[UNet](https://github.com/milesial/Pytorch-UNet);[FCN8s](https://github.com/wkentaro/pytorch-fcn); [SegNet](https://github.com/vinceecws/SegNet_PyTorch?tab=readme-ov-file); [PSPNet](https://github.com/Lextal/pspnet-pytorch); [ENet](https://github.com/davidtvs/PyTorch-ENet); [ICNet](https://github.com/hszhao/ICNet); [UNet+AttGate](https://github.com/EdgarLefevre/Attention_Unet_Pytorch) [DANet](https://github.com/junfu1115/DANet); [LEDNet](https://github.com/sczhou/LEDNet); [DUNet](https://github.com/Tramac/awesome-semantic-segmentation-pytorch); [CENet](https://github.com/Guzaiwang/CE-Net); [CGNet](https://github.com/wutianyiRosun/CGNet); [OCNet](https://github.com/openseg-group/OCNet.pytorch); [GCN](https://github.com/tkipf/pygcn), 
 ### Results
 ![Table1](https://github.com/IMOP-lab/VTF-Net-Pytorch/blob/main/figures/Table1.jpg)
 Table1: The results of segmentation performance of the proposed method against 14 baseline models, evaluated on the CMED-18K dataset. Metrics include dice coefficient, HD, HD95, NCC, and Kappa statistic. The highest performance values for each metric are highlighted in red, with the second highest marked in blue.
