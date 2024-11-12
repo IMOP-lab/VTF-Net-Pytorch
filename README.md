@@ -14,10 +14,20 @@ The hardware configuration consisted of a desktop system equipped with two NVIDI
 
 ## Experiment
 
-### Datesets
+### Datasets
+|Datasets	| Quantity |  Training Set |	Validation Set | Testing Set|
+|-|-|-|-|-|
+|CMED-18k|10000|7200|800|2000|
 
 ### baseline
+We provide GitHub links pointing to the PyTorch implementation code for all networks compared in this experiment here, so you can easily reproduce all these projects.
 
+[UNet](https://github.com/milesial/Pytorch-UNet);[FCN8s](); [SegNet](); [PSPNet](); [ENet](); [ICNet](); [UNet+AttGate]() [DANet](); [LEDNet](); [DUNet](); [CENet](); [CGNet](); [OCNet](); [GCN](), 
 ### Results
+![Figure2](https://github.com/IMOP-lab/VTF-Net-Pytorch/blob/main/figures/Table1.jpg)
+Figure2:The results of segmentation performance of the proposed method against 14 baseline models, evaluated on the CMED-18K dataset. Metrics include dice coefficient, HD, HD95, NCC, and Kappa statistic. The highest performance values for each metric are highlighted in red, with the second highest marked in blue.
+
+![Figure3](https://github.com/IMOP-lab/VTF-Net-Pytorch/blob/main/figures/Fig5.png)
+Figure3:The visual results of our method compared to the existing 14 segmentation methods on the CMED-18k dataset.
 
 ## Abaltion study
