@@ -24,10 +24,11 @@ We provide GitHub links pointing to the PyTorch implementation code for all netw
 
 [UNet](https://github.com/milesial/Pytorch-UNet);[FCN8s](); [SegNet](); [PSPNet](); [ENet](); [ICNet](); [UNet+AttGate]() [DANet](); [LEDNet](); [DUNet](); [CENet](); [CGNet](); [OCNet](); [GCN](), 
 ### Results
-![Figure2](https://github.com/IMOP-lab/VTF-Net-Pytorch/blob/main/figures/Table1.jpg)
-Figure2:The results of segmentation performance of the proposed method against 14 baseline models, evaluated on the CMED-18K dataset. Metrics include dice coefficient, HD, HD95, NCC, and Kappa statistic. The highest performance values for each metric are highlighted in red, with the second highest marked in blue.
+![Table1](https://github.com/IMOP-lab/VTF-Net-Pytorch/blob/main/figures/Table1.jpg)
+Table1:The results of segmentation performance of the proposed method against 14 baseline models, evaluated on the CMED-18K dataset. Metrics include dice coefficient, HD, HD95, NCC, and Kappa statistic. The highest performance values for each metric are highlighted in red, with the second highest marked in blue.
 
-![Figure3](https://github.com/IMOP-lab/VTF-Net-Pytorch/blob/main/figures/Fig5.png)
-Figure3:Illustration of results between VTF-Net and 14 baseline models. The first row presents the original input images, followed by corresponding results, including zoomed-in views of edema regions to highlight segmentation detail.
+![Figure2](https://github.com/IMOP-lab/VTF-Net-Pytorch/blob/main/figures/Fig5.png)
+Figure2:Illustration of results between VTF-Net and 14 baseline models. The first row presents the original input images, followed by corresponding results, including zoomed-in views of edema regions to highlight segmentation detail.
 
+All experiments were executed under identical conditions, and the results are detailed in Table1 and Figure2. VTF-Net showed competitive results across various evaluation metrics.
 ## Abaltion study
