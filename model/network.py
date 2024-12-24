@@ -179,8 +179,8 @@ class VTFNet(nn.Module):
             conv_op=nn.Conv2d,  # 使用默认的2D卷积
             kernel_sizes=[3, 3, 3, 3, 3],  # 假设每个阶段的卷积核大小为3x3
             strides=[1, 1, 1, 1, 1],  # 假设每个阶段的步长为1
-            # n_blocks_per_stage=[2, 2, 2, 2, 2]  # 假设每个阶段有2个残差块
-            n_blocks_per_stage=[1, 1, 1, 1, 1]  # 假设每个阶段有2个残差块
+            n_blocks_per_stage=[2, 2, 2, 2, 2]  # 假设每个阶段有2个残差块
+            # n_blocks_per_stage=[1, 1, 1, 1, 1]  # 假设每个阶段有2个残差块
         )
         
     def forward(self, x):
@@ -210,11 +210,11 @@ class VTFNet(nn.Module):
         c4 = c4 + c4_enc 
        
         #### directional Prior ####
-        directional_c5 = self.channel_mapping(c5)  # 16 
-        mapped_c5 = F.interpolate(directional_c5, scale_factor=32, mode='bilinear', align_corners=True)  # 16
-        mapped_c5 = self.direc_reencode(mapped_c5)  # 16
+        directional_c5 = self.channel_mapping(c5)  
+        mapped_c5 = F.interpolate(directional_c5, scale_factor=32, mode='bilinear', align_corners=True)  
+        mapped_c5 = self.direc_reencode(mapped_c5)  
         
-        d_prior = self.gap(mapped_c5)  # 16
+        d_prior = self.gap(mapped_c5)  
 
         c5 = self.msaf_module(c5,d_prior)  # d_prior被reencoder，通道数变成512
 
