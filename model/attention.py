@@ -14,7 +14,6 @@ from torch.nn import functional as F
 
 torch_ver = torch.__version__[:3]
 
-__all__ = ['PAM_Module', 'CAM_Module']
 
 
 class SEAttention(nn.Module):
