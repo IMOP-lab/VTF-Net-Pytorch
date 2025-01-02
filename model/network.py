@@ -146,7 +146,7 @@ class VTFNet(nn.Module):
     def __init__(self, num_class=1):
         super(VTFNet, self).__init__()
         
-        out_planes = num_class * 8  # num_class=2, 16
+        out_planes = num_class   # 
         self.backbone = resnet34(pretrained=True)
         self.msaf_module = MSAF_Module(512, 512, out_planes)
         self.rsr5 = RescaledSEResidualBlock(512, 256, relu=False, last=True)  # 256
@@ -240,10 +240,10 @@ class VTFNet(nn.Module):
 
         feat_list = [r1, r2, r3, r4, c5]
         encoder_feats = [c1, c2, c3, c4, c5]
-        final_feat = self.final_decoder(feat_list, encoder_feats) # 32
+        final_feat = self.final_decoder(feat_list, encoder_feats) 
 
         final_out = self.final_conv(final_feat)
-        final_out = self.upsample4x_op(final_out)  # out_planes = 16
+        final_out = self.upsample4x_op(final_out)  
 
         return final_out
 
